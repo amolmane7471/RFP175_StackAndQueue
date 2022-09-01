@@ -30,5 +30,16 @@ public class StackAndQueueMain {
 		stack.printStack();//70
 		stack.pop();//70
 		stack.printStack();//stack is empty
+		System.out.println("<<<< Queue Implementation >>>>");
+		/*
+		 * UC3 : Ability to create a Queue of 56->30->70 
+		 * call enqueue method using object q.
+		 */
+		Queue_LL q = new Queue_LL();
+		q.enqueue(56);
+		q.enqueue(30);
+		q.enqueue(70);
+        q.viewQ();
+
 	}
 }
