@@ -35,24 +35,17 @@ public class LinkedListStack {
 		public void displayLinkedList() {
 			Node currentNode = head;
 			while (currentNode != null) {
-				System.out.println(" ");
+					System.out.println(" ");
 				System.out.println("|"+currentNode.getKey()+"|");
 				System.out.print("|__| ");
 				currentNode = currentNode.next;
-				
-			}
+				}	
 
 		}
 
 		public Node pop() {
-			System.out.print("Popped element:"+head.key);
-		if(head==null) {
-		
-			System.out.println("Stack is Empty!");
-		}
-		else {
-			head=head.next;
-		}
+		System.out.print("Popped element:"+head.key);
+			head = head.next;
 		System.out.println();
 			return	head;
 		}
