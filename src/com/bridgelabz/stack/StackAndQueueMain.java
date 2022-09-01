@@ -40,6 +40,21 @@ public class StackAndQueueMain {
 		q.enqueue(30);
 		q.enqueue(70);
         q.viewQ();
+        System.out.println("\n****** UC4 ******");
+        /*
+         * UC4 : Ability to dequeue from the beginning
+         */
+		q.enqueue(20);
+		q.viewQ();
+		System.out.println("size : " + q.count());
+		q.dequeue();
+		q.dequeue();
+		q.dequeue();
+		q.dequeue();
+        q.viewQ();
+        System.out.println("Head : " + q.peek());
+        System.out.println("isEmpty : " + q.isEmpty());
+        System.out.println("size : " + q.count());
 
 	}
 }
